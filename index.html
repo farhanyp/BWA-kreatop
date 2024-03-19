@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Tailwind CSS</title>
+    <!-- Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="max-w-screen-2xl mx-auto">
+    <div class="flex h-fit">
+        <!-- Sidebar -->
+        <div class="sidebar border-line border-[1px]">
+            <div class="flex flex-col items-center">
+                <div class="sidebar-header  pb-[50px] px-[27px] flex justify-between items-center">
+                    <div class="flex items-center gap-x-0.5">
+                        <img src="assets/logo-35.svg" alt="" srcset="" width="w-[50px] h-[39px] object-contain">
+                        <span class="sidebar-content text-[28px] font-bold">kreatop</span>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col sidebar-content flex-1 gap-y-4">
+                    <div class="flex flex-col gap-y-4 font-semibold text-base">
+                        <a href="" class="w-full py-2.5 flex gap-x-3 pl-4 py-2.5 rounded-full active">
+                            <img src="assets/grid-5.svg" alt="" srcset="" class="text-white">
+                            <span>Overview</span>
+                        </a>
+                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/messages-2.svg" alt="" srcset="" class="text-white">
+                            <span>Messages</span>
+                            <span class="notification capitalized">19</span>
+                        </a>
+                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/profile-2user.svg" alt="" srcset="" class="text-white">
+                            <span>Clients</span>
+                        </a>
+                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/menu-board.svg" alt="" srcset="" class="text-white">
+                            <span>Content Planner</span>
+                        </a>
+                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/chart-2.svg" alt="" srcset="" class="text-white">
+                            <span>Bot Analytics</span>
+                            <span class="notification-new capitalized">NEW</span>
+                        </a>
+                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/star.svg" alt="" srcset="" class="text-white">
+                            <span>Testimonials</span>
+                        </a>
+                    </div>
+                    <div class="w-full h-[1px] bg-line"></div>
+                    <div class="flex flex-col gap-y-4 font-semibold text-base">
+                        <a href="" class="flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/setting-2.svg" class="text-white">
+                            <span>Settings</span>
+                        </a>
+                        <a href="" class="flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/logout.svg" alt="" srcset="" class="text-white">
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center px-4 border-[2px] border-line py-5 mt-[75px] gap-y-5 rounded-[20px]">
+                <div class="flex flex-col items-start gap-y-5">
+                    <div class="flex justify-center items-center w-[60px] h-[60px] bg-secondary rounded-full">
+                        <img src="assets/code.svg" alt="" class="w-7 h-7 object-contain">
+                    </div>
+                    <h5 class="font-bold text-lg">Kreto AI Ready to Help You Grow.</h5>
+                </div>
+                <a href="" class="w-full py-2.5 justify-center bg-secondary text-center text-primary rounded-full text-sm font-bold">
+                    Upgrade Now
+                </a>
+            </div>
+        </div>
+    
+        <!-- Main Content -->
+        <div class="flex flex-col flex-1 pl-[30px] bg-primary">
+            <!-- Topbar -->
+            <div class="topbar p-4 bg-primary">
+                <span class="text-lg font-semibold text-white">Topbar</span>
+            </div>
+            <button id="theme-toggle" class="text-gray-600 focus:outline-none">
+                Theme
+            </button>
+    
+            <!-- Main Content -->
+            <div class="main-content flex-1 p-4">
+                <span class="text-lg font-semibold">Main Content</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+        });
+
+        const sidebar = document.querySelector('.sidebar');
+        const sidebarContent = document.querySelector('.sidebar-content');
+
+        sidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            sidebarContent.classList.toggle('hidden');
+        });
+    </script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0C0C0C',
+            secondary: '#DAFF00',
+            line: '#282828'
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+/* Custom CSS for layout */
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    width: 280px;
+    transition: all 0.3s ease;
+    padding: 50px 30px;
+    background-color: #111111;
+    color: #fff;
+}
+
+.sidebar.collapsed {
+    width: 280px;
+    height: 100vh;
+}
+
+.sidebar.collapsed .sidebar-content {
+    opacity: 0;
+    display: none;
+}
+
+.topbar {
+    background-color: #4A5568;
+}
+
+.main-content {
+    background-color: #F7FAFC;
+}
+
+.dark .sidebar {
+    background-color: #07041b;
+    color: #E2E8F0;
+}
+
+.dark .topbar {
+    background-color: #2D3748;
+    color: #E2E8F0;
+}
+
+.dark .main-content {
+    background-color: #2D3748;
+    color: #E2E8F0;
+}
+
+.active{
+    background-color: #DAFF00;
+    color: #0C0C0C;
+}
+
+.notification{
+    width: 24px;
+    height: 24px;
+    background-color: #007AFF;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-new{
+    width: 40px;
+    height: 23px;
+    background-color: #007AFF;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlink {
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s, box-shadow 0.3s;
+    }
+    .navlink::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px; /* Jarak bayangan dari teks */
+        width: 100%;
+        height: 2px; /* Ketebalan bayangan */
+        background-color: rgba(218, 255, 0, 1); /* Warna bayangan */
+        transform: scaleX(0); /* Awalnya tidak terlihat */
+        transition: transform 0.3s;
+    }
+    .navlink:hover::after {
+        transform: scaleX(1); /* Munculkan bayangan pada hover */
+        box-shadow: 0px 15px 15px 0px rgba(255, 147, 87, 0.8);
+    }
