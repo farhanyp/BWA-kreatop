@@ -12,60 +12,69 @@
 </head>
 
 <body class="max-w-screen-2xl mx-auto">
-    <div class="flex h-fit">
+    <div class="flex">
         <!-- Sidebar -->
         <div class="sidebar border-line border-[1px]">
             <div class="flex flex-col items-center">
-                <div class="sidebar-header  pb-[50px] px-[27px] flex justify-between items-center">
-                    <div class="flex items-center gap-x-0.5">
+                <div class="sidebar-header pb-[50px] px-[27px] flex justify-between items-center">
+                    <a href="" class="flex items-center gap-x-0.5">
                         <img src="assets/logo-35.svg" alt="" srcset="" width="w-[50px] h-[39px] object-contain">
                         <span class="sidebar-content text-[28px] font-bold">kreatop</span>
-                    </div>
+                    </a>
                 </div>
-                <div class="w-full flex flex-col sidebar-content flex-1 gap-y-4">
+
+                <div class="flex flex-col gap-y-4"> 
                     <div class="flex flex-col gap-y-4 font-semibold text-base">
-                        <a href="" class="w-full py-2.5 flex gap-x-3 pl-4 py-2.5 rounded-full active">
-                            <img src="assets/grid-5.svg" alt="" srcset="" class="text-white">
-                            <span>Overview</span>
+                        <a href="" class="sidebar-link w-full py-2.5 pl-4 flex gap-x-3 rounded-full active">
+                            <img src="assets/grid-5.svg" alt="" srcset="" class="w-6 h-6">
+                            <span class="sidebar-content">Overview</span>
                         </a>
-                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
-                            <img src="assets/messages-2.svg" alt="" srcset="" class="text-white">
-                            <span>Messages</span>
-                            <span class="notification capitalized">19</span>
+        
+                        <a href="" class="sidebar-link w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/messages-2.svg" alt="" srcset="" class="w-6 h-6">
+                            <span class="sidebar-content">Messages</span>
+                            <span class="notification capitalized sidebar-content">19</span>
                         </a>
-                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
-                            <img src="assets/profile-2user.svg" alt="" srcset="" class="text-white">
-                            <span>Clients</span>
+        
+                        <a href="" class="sidebar-link w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/profile-2user.svg" alt="" srcset="" class="w-6 h-6">
+                            <span class="sidebar-content">Clients</span>
                         </a>
-                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
-                            <img src="assets/menu-board.svg" alt="" srcset="" class="text-white">
-                            <span>Content Planner</span>
+        
+                        <a href="" class="sidebar-link w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/menu-board.svg" alt="" srcset="" class="w-6 h-6">
+                            <span class="sidebar-content">Content Planner</span>
                         </a>
-                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
-                            <img src="assets/chart-2.svg" alt="" srcset="" class="text-white">
-                            <span>Bot Analytics</span>
-                            <span class="notification-new capitalized">NEW</span>
+        
+                        <a href="" class="sidebar-link w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/chart-2.svg" alt="" srcset="" class="w-6 h-6">
+                            <span  class="sidebar-content">Bot Analytics</span>
+                            <span class="notification-new capitalized sidebar-content">NEW</span>
                         </a>
-                        <a href="" class="w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
-                            <img src="assets/star.svg" alt="" srcset="" class="text-white">
-                            <span>Testimonials</span>
+    
+                        <a href="" class="sidebar-link w-full flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/star.svg" alt="" srcset="" class="w-6 h-6">
+                            <span class="sidebar-content">Testimonials</span>
                         </a>
                     </div>
+
                     <div class="w-full h-[1px] bg-line"></div>
+                    
                     <div class="flex flex-col gap-y-4 font-semibold text-base">
-                        <a href="" class="flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
-                            <img src="assets/setting-2.svg" class="text-white">
-                            <span>Settings</span>
+                        <a href="" class="sidebar-link flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/setting-2.svg" class="w-6 h-6">
+                            <span class="sidebar-content">Settings</span>
                         </a>
-                        <a href="" class="flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
-                            <img src="assets/logout.svg" alt="" srcset="" class="text-white">
-                            <span>Logout</span>
+                        <a href="" class="sidebar-link flex gap-x-3 pl-4 py-2.5 rounded-full navlink">
+                            <img src="assets/logout.svg" alt="" srcset="" class="w-6 h-6">
+                            <span class="sidebar-content">Logout</span>
                         </a>
                     </div>
+
                 </div>
             </div>
 
-            <div class="flex flex-col items-center px-4 border-[2px] border-line py-5 mt-[75px] gap-y-5 rounded-[20px]">
+            <div class="sidebar-content flex flex-col items-center px-4 border-[2px] border-line py-5 mt-[75px] gap-y-5 rounded-[20px]">
                 <div class="flex flex-col items-start gap-y-5">
                     <div class="flex justify-center items-center w-[60px] h-[60px] bg-secondary rounded-full">
                         <img src="assets/code.svg" alt="" class="w-7 h-7 object-contain">
@@ -79,18 +88,160 @@
         </div>
     
         <!-- Main Content -->
-        <div class="flex flex-col flex-1 pl-[30px] bg-primary">
+        <div class="flex flex-col flex-1 bg-primary">
             <!-- Topbar -->
-            <div class="topbar p-4 bg-primary">
-                <span class="text-lg font-semibold text-white">Topbar</span>
+            <div class="topbar bg-primary px-[30px] pt-[30px] flex justify-between">
+                <div>
+                    <h5 class="text-[32px] font-bold text-white">Overview</h5>
+                    <p class="text-lg text-caption">Growth reporting of your account</p>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <div class="flex gap-3.5 pr-6"> 
+                        <div class="w-[50px] h-[50px] flex justify-center items-center border-line border-[1px] rounded-full">
+                            <button id="theme-toggle" class="text-gray-600 focus:outline-none">
+                                <p class="text-white font-semibold text-2xl">T</p>
+                            </button>
+                            <!-- <img src="assets/search-normal.svg" alt="" srcset="" class="w-6 h-6 object-contain"> -->  
+                        </div>
+                        <div class="w-[50px] h-[50px] flex justify-center items-center border-line border-[1px] rounded-full">
+                            <img src="assets/search-normal.svg" alt="" srcset="" class="w-6 h-6 object-contain">
+                        </div>
+                        <div class="w-[50px] h-[50px] flex justify-center items-center border-line border-[1px] rounded-full">
+                            <img src="assets/notification.svg" alt="" srcset="" class="w-6 h-6 object-contain">
+                        </div>
+                    </div>
+                    <div class="flex items-center pl-6 border-line border-l-[1px]">                        
+                        <div class="text-end">
+                            <h5 class="text-base font-semibold text-white">Shayna</h5>
+                            <p class="text-sm text-caption">Beauty Reviewer</p>
+                        </div>
+                        <div class="w-[60px] h-[60px] flex justify-center items-center my-1.5 ml-1.5  border-line border-[1px] rounded-full">
+                            <img src="assets/girl1.png" alt="" srcset="" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button id="theme-toggle" class="text-gray-600 focus:outline-none">
-                Theme
-            </button>
-    
-            <!-- Main Content -->
-            <div class="main-content flex-1 p-4">
-                <span class="text-lg font-semibold">Main Content</span>
+            
+            <div class="main-content flex justify-between items-center">
+                <!-- Left Content -->
+                <div class="left-content">
+                    <span class="text-lg font-semibold">Left Content</span>
+                </div>
+
+                <!-- Right Content -->
+                <div class="right-content flex flex-col px-[30px] pt-[30px] gap-y-[30px] pb-3">
+                    <div class="flex flex-col w-[380px] h-[253px] rounded-[36px] bg-secondary card-yellow gap-y-5 px-[30px] pt-[30px] pb-4">
+                        <img src="assets/logo-35 (1).svg" alt="" class="w-16 h-[50px] object-contain">
+                        <div>
+                            <p class="text-base text-third">Balance</p>
+                            <h3 class="text-[46px] text-primary font-bold">$22,591,200</h3>
+                        </div>
+                        <p class="text-base text-third">Shayna Lowi • 08/22</p>
+                    </div>
+
+                    <div class="flex flex-col text-white gap-4">
+                        <h5 class="text-lg font-bold ">Top Big Clients</h5>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <img src="assets/logo buildwith angga 1.png" alt="" class="w-[46px] h-[46px] rounded-full">
+                                <div class="pl-3">
+                                    <div>
+                                        <p class="text-base font-bold">$853,991</p>
+
+                                    </div>
+                                    <p class="text-username text-sm text-caption">BuildWithAngga, Inc</p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="price cursor-pointer">+25%</a>
+                        </div>
+
+                        <div class="w-full h-[1px] bg-line"></div>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <img src="assets/logo.png" alt="" class="w-[46px] h-[46px] rounded-full">
+                                <div class="pl-3">
+                                    <div>
+                                        <p class="text-base font-bold">$245,000</p>
+                                    </div>
+                                    <p class="text-username text-sm text-caption">Gelombang LLC</p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="price cursor-pointer">-10%</a>
+                        </div>
+
+                        <div class="w-full h-[1px] bg-line"></div>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <img src="assets/logo-88.png" alt="" class="w-[46px] h-[46px] rounded-full">
+                                <div class="pl-3">
+                                    <div>
+                                        <p class="text-base font-bold">$77,392</p>
+                                    </div>
+                                    <p class="text-username text-sm text-caption">Mekaaary, Inc</p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="price cursor-pointer">+85%</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col text-white gap-4">
+                        <h5 class="text-lg font-bold ">Revenue Drivers</h5>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <div class="w-[46px] h-[46px] flex justify-center items-center bg-revenue rounded-full">
+                                    <img src="assets/crown.svg" alt="" class="w-6 h-6 rounded-full">
+                                </div>
+                                <div class="pl-3">
+                                    <div>
+                                        <p class="text-base font-bold">Brand Awareness</p>
+                                    </div>
+                                    <p class="text-username text-sm text-caption">14,409,220 Million Views</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-[1px] bg-line"></div>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <div class="w-[46px] h-[46px] flex justify-center items-center bg-revenue rounded-full">
+                                    <img src="assets/crown.svg" alt="" class="w-6 h-6 rounded-full">
+                                </div>
+                                <div class="pl-3">
+                                    <div>
+                                        <p class="text-base font-bold">Software Promotion</p>
+                                    </div>
+                                    <p class="text-username text-sm text-caption">39,499 Installed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-[1px] bg-line"></div>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <div class="w-[46px] h-[46px] flex justify-center items-center bg-revenue rounded-full">
+                                    <img src="assets/crown.svg" alt="" class="w-6 h-6 rounded-full">
+                                </div>
+                                <div class="pl-3">
+                                    <div>
+                                        <p class="text-base font-bold">Users Growth</p>
+                                    </div>
+                                    <p class="text-username text-sm text-caption">558,311 Users Signed Up</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-lg font-semibold"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -104,9 +255,19 @@
         });
 
         const sidebar = document.querySelector('.sidebar');
+        const sidebarlink = document.getElementById('sidebar-link');
         const sidebarContent = document.querySelector('.sidebar-content');
+        const navLinks = document.querySelectorAll('a.sidebar-link');
+
+        console.log()
 
         sidebar.addEventListener('click', () => {
+            navLinks.forEach(link => {
+                link.classList.toggle('pl-4')
+                link.classList.toggle('justify-center')
+                link.classList.toggle('w-14')
+                link.classList.toggle('w-11')
+            });
             sidebar.classList.toggle('collapsed');
             sidebarContent.classList.toggle('hidden');
         });
@@ -119,7 +280,10 @@
           colors: {
             primary: '#0C0C0C',
             secondary: '#DAFF00',
-            line: '#282828'
+            third: '#111111',
+            line: '#282828',
+            caption: '#676767',
+            revenue: '#312ECB',
           }
         }
       }
